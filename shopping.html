@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Arduino</title>
+
+        <!--Boostrap CDN-->
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous">
+
+        <!--font awesome cdn-->
+        <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/shopping.css">
+
+        <link rel="shortcut icon" href="images/logo3.ico" type="image/x-icon" />
+
+        <script src="js/search.js"></script>
+
+        <script src="js/option.js"></script>
+
+    </head>
+    <body>
+
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-12">
+            </div> 
+            <div class="col-md-4 col-12 text-center">
+              <h2 class="my-md-3 site-title text-white">Arduino Projects</h2>
+            </div>           
+            <div class="col-md-4 col-12 text-right">
+              <p class="my-md-4 header-links">
+                <a href="http://127.0.0.1:5500/sign%20in.html" class="px-2">Sign in</a>
+<!--                 <a href="http://127.0.0.1:5500/library.html">Download library</a> -->
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container-fluid p-0">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:5500/project.html">HOME  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/shopping.html">Shopping</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/library.html">library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://downloads.arduino.cc/arduino-1.8.13-windows.exe">Download Arduino</a>
+              </li>
+              </ul>
+            </div>
+            </nav>
+        </div>
+        </header>
+    
+        <div class="main">
+          
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('arduino')"> Arduino</button>
+            <button class="btn" onclick="filterSelection('sensor')"> Sensor</button>
+            <button class="btn" onclick="filterSelection('motor')"> Motors</button>
+          </div>
+          
+          <!-- Portfolio Gallery Grid -->
+          <div class="row">
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/roboCraze-Arduino
+                -Development-Board-cable/dp/B07G4C4D8F/ref=sr_1_
+                1_sspa?dchild=1&keywords=Arduino+Uno&qid=1610188
+                290&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlm
+                aWVyPUExMTNLNlBCMVZVMUMmZW5jcnlwdGVkSWQ9QTAzMjcx
+                MTFYR1pZMTQzTThJREcmZcnlwdGVkQWRJZD1BMDg2MTM5MFR
+                FQ0tHTlJQTDVONCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb24
+                9Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="><img src="productsimg/arduino-uno.png" alt="arduino" style="width:25%"></a>
+                <h4>Arduino UNO</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/ROBOMART-Robomart-Arduino-Mega
+                -2560/dp/B00QNPLB2M/ref=sr_1_9?dchild=1&keywords=Arduino+Due&
+                qid=1610188887&sr=8-9"><img src="productsimg/arduino-mega.png" alt="arduino" style="width:25%"></a>
+                <h4>Arduino Mega</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/Robohaat-Nano-Arduino
+                -Compatible-Other/dp/B00YABY0SI/ref=sr_1_5?dchild=1&
+                keywords=Arduino+Nano&qid=1610189074&sr=8-5"><img src="productsimg/arduino-nano.png" alt="arduino" style="width:25%"></a>
+                <h4>Arduino Nano</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/Arduino-A000062-Due-Microcontroller
+                         -Board/dp/B00A6C3JN2/ref=sr_1_2?dchild=1&keywords=Arduino
+                         +Due&qid=1610189866&sr=8-2"><img src="productsimg/arduino-due.png" alt="arduino" style="width:25%"></a>
+                <h4>Arduino Due Original</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/ROBOMART-Robomart-Arduino-Mega
+                -2560/dp/B00QNPLB2M/ref=sr_1_9?dchild=1&keywords=Arduino+Due&
+                qid=1610188887&sr=8-9"><img src="productsimg/arduino-LilyPad.png" alt="arduino" style="width:25%"></a>
+                <h4>LilyPad Arduino Board</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/ROBOTHINGS-RoboThings-
+                Bluetooth-hc-05/dp/B08HMDNR8B/ref=sr_1_2?dchild=1&key
+                words=Arduino+Bluetooth&qid=1610190129&sr=8-2"><img src="productsimg/arduino-bluetooth.png" alt="arduino" style="width:25%"></a>
+                <h4>Arduino Bluetooth</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/SparkFun-Development-Connector
+                -Microphone-TenserFlow/dp/B07YCVWBDH/ref=sr_1_8?dchild=1&keyw
+                ords=RedBoard+Arduino+Board&qid=1610190266&sr=8-8"><img src="productsimg/arduino-RedBoard.png" alt="arduino" style="width:25%"></a>
+                <h4>RedBoard Arduino Board</h4>
+                <p></p>
+              </div>
+            </div>
+            
+            <div class="column arduino">
+              <div class="content">
+                <a href="https://www.amazon.in/Leonardo-ATmega32U4
+                -Development-Arduino-Robocraze/dp/B084KVH49X/ref=s
+                r_1_3?dchild=1&keywords=Arduino+Esplora&qid=1610190368&sr=8-3"><img src="productsimg/arduino-leonardo.png" alt="arduino" style="width:25%"></a>
+                <h4>Arduino Leonardo Board</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/Generic-PZIN51001292
+                -Mlx90614-Contactless-Temperature/dp/B01HNP9D2K/ref
+                =sr_1_13?dchild=1&keywords=Temperature+Sensors&qid
+                =1610190626&sr=8-13"><img src="productsimg/senser-temper.png" alt="sensor" style="width:25%"></a>
+                <h4>Temperature Sensor</h4>
+                <p></p>
+              </div>
+            </div>
+
+
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/Electronicspices-P
+                roximity-Obstacle-Sensing-Follower/dp/B08BTZX9MW/
+                ref=sr_1_5?dchild=1&keywords=Proximity+Sensor&qid
+                =1610190953&sr=8-5"><img src="productsimg/senser-ir.png" alt="sensor" style="width:25%"></a>
+                <h4>IR</h4>
+                <p></p>
+              </div>
+            </div>
+
+            
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/Robocraze-MPU-605
+                0-Gyroscope-Accelerometer-Arduino/dp/B07H3XH1TB/
+                ref=sr_1_1?crid=1EV7MU7ZULODN&dchild=1&keywords=
+                accelerometer+sensor&qid=1610191059&sprefix=Acce
+                lerometer+%2Caps%2C300&sr=8-1"><img src="productsimg/senser-accelerometer.png" alt="sensor" style="width:25%"></a>
+                <h4>Accelerometer</h4>
+                <p></p>
+              </div>
+            </div>
+
+            
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/Robodo-Electronic
+                s-SEN38-Resistor-Pressure/dp/B0787GLHNK/ref=sr_1
+                _8?dchild=1&keywords=Pressure+Sensor&qid=16101912
+                04&sr=8-8"><img src="productsimg/senser-force.png" alt="sensor" style="width:25%"></a>
+                <h4>Force Sensor</h4>
+                <p></p>
+              </div>
+            </div>
+
+            
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/AusleseTM-Sensor
+                -Module-Photosensitive-Arduino/dp/B07JMNTMQH/re
+                f=sr_1_14?dchild=1&keywords=Light+Sensor&qid=16
+                10191318&sr=8-14"><img src="productsimg/senser-ldr.png" alt="sensor" style="width:25%"></a>
+                <h4>LDR Light Sensor</h4>
+                <p></p>
+              </div>
+            </div>
+
+            
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/Robotbanao-HC-SR04-Ultrasonic-Distance
+                -Arduino/dp/B07FSHJSTN/ref=sr_1_2_sspa?dchild=1&keywords=Ultrasonic+S
+                ensor&qid=1610191463&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVy
+                PUExVFpRQzNCTjdJOFlXJmVuY3J5cHRlZElkPUEwODYzNjU0MTZLQzhPUUhYVkxSUSZlb
+                mNyeXB0ZWRBZElkPUEwOTQ2Njk1M0swS005NENIMlFQUyZ3aWRnZXROYW1lPXNwX2F0Zi
+                ZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="><img src="productsimg/senser-ultrasonic.png  " alt="sensor" style="width:25%"></a>
+                <h4>Ultrasonic Sensor</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column sensor">
+              <div class="sensor">
+                <a href="https://www.amazon.in/OLatus-Ol-Sensor-Mq2-I-Butane-Propane-
+                Hydrogen/dp/B0795SRF3V/ref=sr_1_1?dchild=1&keywords=Smoke%2C+Gas+and+
+                Alcohol+Sensor&qid=1610191589&sr=8-1"><img src="productsimg/senser-gas.png" alt="sensor" style="width:25%"></a>
+                <h4> Smoke Gas Sensor</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column motor">
+              <div class="motor">
+                <a href="https://www.amazon.in/Embedded-kar
+                t-1000KV-Brushless-Motor/dp/B07L3WMZHX/ref
+                =sr_1_5?dchild=1&keywords=ac+brushless+motor
+                &qid=1610191717&sr=8-5"><img src="productsimg/motor-dc-brussless.png" alt="motor" style="width:25%"></a>
+                <h4>DC Brushed Motors</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="column motor">
+              <div class="motor">
+                <a href="https://www.amazon.in/Generic-
+                Swing-Motor-Synchronous-220V-240V
+                /dp/B06XR358CX/ref=sr_1_4?dchild=1&key
+                words=ac+brushless+motor&qid=1610191945&sr=8-4"><img src="productsimg/motor-Auto-Swing.png" alt="motor" style="width:25%"></a>
+                <h4>Auto Swing Metal Motor</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <!-- END GRID -->
+          </div>
+          
+          <!-- END MAIN -->
+          </div>
+
+          <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+            
+
+
+</body>
+</html>
